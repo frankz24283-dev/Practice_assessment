@@ -6,8 +6,12 @@
 '''
 
 #-----libraries------
-
+import random
 #-----constants------
+WINNING_SCORE = 2
+MIN_AGE = 5
+MAX_AGE = 120
+COIN_OPTIONS = ["Heads", "Tails"]
 
 #-----functions-------
 
