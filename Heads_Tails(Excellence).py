@@ -14,5 +14,11 @@ MAX_AGE = 120
 COIN_OPTIONS = ["Heads", "Tails"]
 
 #-----functions-------
-
+def validate_name():
+    while True:
+        name_input = input("Enter your name: ").strip()
+        if len(name_input) > 0 and name_input.isalpha():
+            return name_input.capitalize()
+        else:
+            print("Invalid input! Name must contain letters only and cannot be empty.\n")
 #------main routine-----
