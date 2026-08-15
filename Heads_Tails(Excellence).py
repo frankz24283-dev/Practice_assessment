@@ -56,3 +56,8 @@ def heads_tails(player_name):
     else:
         print(f"Game over {player_name}, you lost the game.")
 #------main routine-----
+print("Welcome to Heads & Tails game!")
+player_name = validate_name()
+player_age = validate_age()
+    
+heads_tails(player_name)
