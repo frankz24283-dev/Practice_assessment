@@ -35,4 +35,10 @@ def heads_tails(player_name):
     computer_score = 0
 
     print(f"\n--- Game Started! First to {WINNING_SCORE} points wins. ---")
+
+    while player_score < WINNING_SCORE and computer_score < WINNING_SCORE:
+        random_index = random.randint(0, len(COIN_OPTIONS) - 1)
+        computer_choice = COIN_OPTIONS[random_index]
+
+        player_guess = validate_user_guess()
 #------main routine-----
