@@ -26,22 +26,22 @@ def heads_tails():
         computer_guess = options[random.choice]
 
 # Ask for options of users
-user_guess = input("Heads or Tails? ")
+        user_guess = input("Heads or Tails? ")
 
 # Compared both answers(User and computer)
-if user_guess == computer_guess:
-    user_score += 1
-    print(f"It was {computer_guess}, you guessed{user_guess}. You won the game. ")
-else:
-    computer_score += 1
-    print(f"It was {computer_guess}. You guessed {user_guess}. You lost game. ")
+        if user_guess == computer_guess:
+            user_score += 1
+            print(f"It was {computer_guess}, you guessed{user_guess}. You won the game. ")
+        else:
+            computer_score += 1
+            print(f"It was {computer_guess}. You guessed {user_guess}. You lost game. ")
 
 # Display each score
-print(f" Your score: {user_score}")
-print(f"Computer score: {computer_score}\n")
+        print(f" Your score: {user_score}")
+        print(f"Computer score: {computer_score}\n")
 
 #Decide who won the game
-if user_score == 2:
-    print(f"Congratulation {name}, you won the game")
-else:
-    print(f" Game over{name}, you lost the game")
+    if user_score == 2:
+        print(f"Congratulation {name}, you won the game")
+    else:
+        print(f" Game over{name}, you lost the game")
