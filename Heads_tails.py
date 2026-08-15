@@ -6,7 +6,14 @@
 '''
 
 #-----libraries-----
-
+import random
 #-----functions------
 
 #-----main routine-----
+print("Welcome to Heads & Tails game! ")
+name = str(input("Enter you name: "))
+age = int(input("Enter you age: "))
+
+def heads_tails():
+    user_score = 0
+    computer_score = 0
