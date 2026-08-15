@@ -41,4 +41,13 @@ def heads_tails(player_name):
         computer_choice = COIN_OPTIONS[random_index]
 
         player_guess = validate_user_guess()
+
+        if player_guess == computer_choice:
+            player_score += 1
+            print(f"It was {computer_choice}, you guessed {player_guess}. You won that round.")
+        else:
+            computer_score += 1
+            print(f"It was {computer_choice}. You guessed {player_guess}. You lost that round.")
+
+        print(f"Score -> {player_name}: {player_score} | Computer: {computer_score}\n")
 #------main routine-----
