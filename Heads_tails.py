@@ -27,3 +27,11 @@ while user_score != 2 and computer_score != 2:
 
 # Ask for options of users
 user_guess = input("Heads or Tails? ")
+
+# Compared both answers(User and computer)
+if user_guess == computer_guess:
+    user_score += 1
+    print(f"It was {computer_guess}, you guessed{user_guess}. You won the game. ")
+else:
+    computer_score += 1
+    print(f"It was {computer_guess}. You guessed {user_guess}. You lost game. ")
