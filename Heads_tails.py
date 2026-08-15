@@ -39,3 +39,9 @@ else:
 # Display each score
 print(f" Your score: {user_score}")
 print(f"Computer score: {computer_score}\n")
+
+#Decide who won the game
+if user_score == 2:
+    print(f"Congratulation {name}, you won the game")
+else:
+    print(f" Game over{name}, you lost the game")
