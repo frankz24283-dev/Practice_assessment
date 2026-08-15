@@ -35,3 +35,7 @@ if user_guess == computer_guess:
 else:
     computer_score += 1
     print(f"It was {computer_guess}. You guessed {user_guess}. You lost game. ")
+
+# Display each score
+print(f" Your score: {user_score}")
+print(f"Computer score: {computer_score}\n")
