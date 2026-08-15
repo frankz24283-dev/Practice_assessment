@@ -37,3 +37,5 @@ def heads_tails(player_name):
 print("Welcome to Heads & Tails game!")
 player_name = input("Enter your name: ")
 player_age = int(input("Enter your age: "))
+
+heads_tails(player_name)
