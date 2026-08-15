@@ -4,3 +4,11 @@
    Version: 3.0
    Despcripition: Heads and tails programs
 '''
+
+#-----libraries------
+
+#-----constants------
+
+#-----functions-------
+
+#------main routine-----
