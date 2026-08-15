@@ -29,4 +29,10 @@ def validate_user_guess():
             return guess_input
         else:
             print("Invalid choice! Please type 'Heads' or 'Tails'.\n")
+
+def heads_tails(player_name):
+    player_score = 0
+    computer_score = 0
+
+    print(f"\n--- Game Started! First to {WINNING_SCORE} points wins. ---")
 #------main routine-----
