@@ -21,4 +21,12 @@ def validate_name():
             return name_input.capitalize()
         else:
             print("Invalid input! Name must contain letters only and cannot be empty.\n")
+
+def validate_user_guess():
+    while True:
+        guess_input = input("Heads or Tails? ").strip().capitalize()
+        if guess_input in COIN_OPTIONS:
+            return guess_input
+        else:
+            print("Invalid choice! Please type 'Heads' or 'Tails'.\n")
 #------main routine-----
