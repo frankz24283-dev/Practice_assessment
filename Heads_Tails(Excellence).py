@@ -50,4 +50,9 @@ def heads_tails(player_name):
             print(f"It was {computer_choice}. You guessed {player_guess}. You lost that round.")
 
         print(f"Score -> {player_name}: {player_score} | Computer: {computer_score}\n")
+
+    if player_score == WINNING_SCORE:
+        print(f"Congratulations {player_name}, you won the game!")
+    else:
+        print(f"Game over {player_name}, you lost the game.")
 #------main routine-----
