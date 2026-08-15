@@ -34,3 +34,6 @@ def heads_tails(player_name):
     else:
         print(f"Game over {player_name}, you lost the game.")
 #-----main routine-----
+print("Welcome to Heads & Tails game!")
+player_name = input("Enter your name: ")
+player_age = int(input("Enter your age: "))
