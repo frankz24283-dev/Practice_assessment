@@ -24,3 +24,6 @@ def heads_tails():
 while user_score != 2 and computer_score != 2:
     random_choice = random.randint(0,1)
     computer_guess = options[random.choice]
+
+# Ask for options of users
+user_guess = input("Heads or Tails? ")
