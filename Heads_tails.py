@@ -9,12 +9,6 @@
 import random
 #-----functions------
 
-#-----main routine-----
-print("Welcome to Heads & Tails game! ")
-name = str(input("Enter you name: "))
-age = int(input("Enter you age: "))
-options = ["Heads", "Tails"]
-
 # Keep score inside the function
 def heads_tails():
     user_score = 0
@@ -23,7 +17,7 @@ def heads_tails():
 #Keep playing until computer or user reaches 2 points
     while user_score != 2 and computer_score != 2:
         random_choice = random.randint(0,1)
-        computer_guess = options[random.choice]
+        computer_guess = options[random_choice]
 
 # Ask for options of users
         user_guess = input("Heads or Tails? ")
@@ -45,3 +39,11 @@ def heads_tails():
         print(f"Congratulation {name}, you won the game")
     else:
         print(f" Game over{name}, you lost the game")
+
+
+#-----main routine-----
+print("Welcome to Heads & Tails game! ")
+name = str(input("Enter you name: "))
+age = int(input("Enter you age: "))
+options = ["Heads", "Tails"]
+heads_tails()
