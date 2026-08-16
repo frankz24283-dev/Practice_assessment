@@ -16,7 +16,7 @@ COIN_OPTIONS = ["Heads", "Tails"]
 #-----functions-------
 def validate_name():
     while True:
-        name_input = input("Enter your name: ").strip()
+        name_input = input("Enter your name: ")
         if len(name_input) > 0 and name_input.isalpha():
             return name_input.capitalize()
         else:
