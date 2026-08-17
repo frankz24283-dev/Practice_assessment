@@ -14,6 +14,7 @@ MAX_AGE = 120
 COIN_OPTIONS = ["Heads", "Tails"]
 
 #-----functions-------
+#-----Verify Name: Ensure it is not empty and contains only English letters-----
 def validate_name():
     while True:
         name_input = input("Enter your name: ")
@@ -22,6 +23,7 @@ def validate_name():
         else:
             print("Invalid input! Name must contain letters only and cannot be empty.\n")
 
+#-----Validate age: Use try-except to handle non-numeric input and validate the numeric range.--
 def validate_age():
     while True:
         try:
@@ -33,7 +35,7 @@ def validate_age():
         except ValueError:
             print("Invalid input! Please enter a valid number for age.\n")
 
-    
+#---Verify coin selection: Ensure you enter a valid option.----    
 def validate_user_guess():
     while True:
         guess_input = input("Heads or Tails? ").strip().capitalize()
