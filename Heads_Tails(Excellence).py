@@ -22,6 +22,18 @@ def validate_name():
         else:
             print("Invalid input! Name must contain letters only and cannot be empty.\n")
 
+def validate_age():
+    while True:
+        try:
+            age_input = int(input("Enter your age: "))
+            if MIN_AGE <= age_input <= MAX_AGE:
+                return age_input
+            else:
+                print(f"Invalid age! Age must be between {MIN_AGE} and {MAX_AGE}.\n")
+        except ValueError:
+            print("Invalid input! Please enter a valid number for age.\n")
+
+    
 def validate_user_guess():
     while True:
         guess_input = input("Heads or Tails? ").strip().capitalize()
