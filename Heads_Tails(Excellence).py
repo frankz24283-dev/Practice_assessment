@@ -38,7 +38,7 @@ def validate_age():
 #---Verify coin selection: Ensure you enter a valid option.----    
 def validate_user_guess():
     while True:
-        guess_input = input("Heads or Tails? ").strip().capitalize()
+        guess_input = input("Heads or Tails? ").capitalize()
         if guess_input in COIN_OPTIONS:
             return guess_input
         else:
